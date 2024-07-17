@@ -44,6 +44,21 @@ INSTALLATION
 ------------
 
 ### Install via Composer
+~~~
+composer install
+~~~
+### Migrate Database with Mysql
+~~~
+php yii migrate
+~~~
+### Seeder Database with Mysql
+~~~
+php yii seeder
+~~~
+### Run Yii APPS
+~~~
+php yii serve
+~~~
 
 If you do not have [Composer](https://getcomposer.org/), you may install it by following the instructions
 at [getcomposer.org](https://getcomposer.org/doc/00-intro.md#installation-nix).
