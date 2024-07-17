@@ -13,20 +13,11 @@ use yii\widgets\ActiveForm;
     <?php $form = ActiveForm::begin([
         'action' => ['index'],
         'method' => 'get',
-        'options' => [
-            'data-pjax' => 1
-        ],
     ]); ?>
 
-    <?= $form->field($model, 'id') ?>
-
-    <?= $form->field($model, 'id_poliklinik') ?>
-
-    <?= $form->field($model, 'nama_dokter') ?>
-
-    <?= $form->field($model, 'spesialis') ?>
-
-    <?= $form->field($model, 'alamat') ?>
+<?= $form->field($model, 'searchTerm', [
+        'labelOptions' => ['style' => 'display:none;']
+    ])->textInput(['placeholder' => 'Search...']) ?>
 
     <?php // echo $form->field($model, 'nomor_telepon') ?>
 
